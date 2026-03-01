@@ -1,0 +1,51 @@
+<body bgcolor="#e1e1e1">
+<table border="2" width="80%" align="center">
+
+<tr>
+<td><input type="radio" /></td>
+<td> Create a playbook called balance.yml as follows:<br>
+    The playbook contains a play that runs on hosts in the balancers host group and uses the balancer role.
+</td>
+<tr>
+
+<tr>
+<td><input type="radio" /></td>
+<td>This role configures a service to load balance web server requests between hosts in the webservers host group.
+</td>
+<tr>
+<td><input type="radio" /></td>
+<td>When implemented, browsing to hosts in the balancers host group (for example http://serverd.lab.example.com ) should produce the following output:<br>
+<b>Welcome to serverc.lab.example.com on 172.25.250.x</b><br>
+				
+  Reloading the browser should return output from the alternate web server:<br>
+<b>Welcome to serverd.lab.example.com on 172.25.250.x</b>
+</td>
+</tr>
+
+<tr>
+<td><input type="radio" /></td>
+<td> The playbook contains a play that runs on hosts in the webservers host group and uses the phphello role.<br>
+When implemented, browsing to hosts in the webservers host group with the URL /hello.php should produce the following output:
+</td>
+</tr>
+<tr>
+<td><input type="radio" /></td>
+<td> Hello PHP World from FQDN<br>
+where FQDN is the fully qualified domain name of the host.
+For example, browsing to http://serverc.lab.example.com/hello.php, should produce the following output:<br>
+<br>
+Hello PHP World from serverc.lab.example.com <br>
+along with various details of the PHP configuration including the version of PHP that is installed.<br>
+</td>
+</tr>
+<tr>
+<td><input type="radio" /></td>
+<td> Similarly, browsing to http://serverd.lab.example.com/hello.php, should produce the following output:<br><br>
+Hello PHP World from serverd.lab.example.com<br>
+along with various details of the PHP configuration including the version of PHP that is installed.
+</td>
+</tr>
+</table>
+</body>
+
+

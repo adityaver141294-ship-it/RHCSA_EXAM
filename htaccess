@@ -1,0 +1,5 @@
+authname "Hello world"
+authtype basic
+authuserfile  /var/www/html/ex407/ansible/.htpasswd
+require  valid-user
+

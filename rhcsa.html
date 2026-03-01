@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>
+RHEL 8 Exam
+</title>
+<link rel="stylesheet" type="text/css" href="index.css" />
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+<!--
+//               Date(year,month(0-11),date(1-31),hour(0-23),min(0-59),sec(0-59))
+dateFuture = new Date(2011,6,26,14,40,0);
+
+function GetCount(){
+
+        dateNow = new Date();                                                                        //grab current date
+        amount = dateFuture.getTime() - dateNow.getTime();                //calc milliseconds between dates
+        delete dateNow;
+
+        // time is already past
+        if(amount < 0){
+                document.getElementById('countbox').innerHTML="Ask your Instructor to set the time for you.";
+        }
+        // date is still good
+        else{
+                days=0;hours=0;mins=0;secs=0;out="";
+
+                amount = Math.floor(amount/1000);//kill the "milliseconds" so just secs
+
+                days=Math.floor(amount/86400);//days
+                amount=amount%86400;
+
+                hours=Math.floor(amount/3600);//hours
+                amount=amount%3600;
+
+                mins=Math.floor(amount/60);//minutes
+                amount=amount%60;
+
+                secs=Math.floor(amount);//seconds
+
+                if(days != 0){out += days +" day"+((days!=1)?"s":"")+", ";}
+                if(days != 0 || hours != 0){out += hours +" hour"+((hours!=1)?"s":"")+", ";}
+                if(days != 0 || hours != 0 || mins != 0){out += mins +" minute"+((mins!=1)?"s":"")+", ";}
+                out += secs +" seconds";
+                document.getElementById('countbox').innerHTML=out;
+
+                setTimeout("GetCount()", 1000);
+        }
+}
+
+window.onload=function(){GetCount();}//call when everything has loaded
+
+//-->
+</script>
+<div id="countbox"></div>
+</head>
+
+<body>
+<ul>
+
+
+
+<li><h3><input type="checkbox">Done<input type="checkbox">Reattend<a href="ctque0.html"> System Information</h3></a></li>
+
+<hr/>
+
+<h3>Solve this question on Primary Virtual Machine </h3>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque.html">Setup a virtual machine IP Address</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque1.html">Configure YUM repositoy on both machine</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque3.html">Selinux</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque4.html">Create user, group and group membership </a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque2.html">Configure a cron job on primary machine</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque5.html">Create a collaberative directory</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque6.html">Copy the file /etc/fstab to /var/tmp</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque7.html">Configure NTP</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque8.html">Configure autofs</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque9.html">Find the files</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque10.html">Create user with UID</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque11.html">find the string</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque12.html"> Create backup</a></li>
+
+
+<hr/>
+<h3>Solve this question on Secondary Virtual Machine </h3>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque13.html">Break root password on secondary machine</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque1.html">Configure yum repository</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque15.html">Set Tuned profile</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque16.html"> Create swap Partition</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque17.html">Create the lvm partition with P.E.</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque18.html">Create lvm partition</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque19.html">Resize LVM partition</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque20.html">Create a Stratis file system</a></li>
+
+<li><input type="checkbox">Done<input type="checkbox">Reattend <a href="ctque21.html">Create a VDO Device</a></li>
+
+</ul>
+<ul><h2> THANK YOU </h2> <h3> -- GRRAS Training and Development Centre</h3></ul>
+</body>
+</html>

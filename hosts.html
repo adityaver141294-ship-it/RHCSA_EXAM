@@ -1,0 +1,36 @@
+<body bgcolor="#e1e1e1">
+<table border="2" width="80%" align="center">
+
+<tr>
+<td><input type="radio" /></td>
+<td>Generate a hosts file <br>
+    - Download an initial template file called hosts.j2 from http://classroom.example.com/content/EXAM/ <br>
+	  to /home/admin/ansible/ Complete the template so that it can be used to generate a file with a line for each inventory host in the same format as /etc/hosts
+</td>
+<tr>
+
+<tr>
+<td><input type="radio" /></td>
+<td> Create a playbook called gen_hosts.yml  that   uses this template to generate the file /etc/hosts on hosts in the dev host group.
+</td>
+<tr>
+<td><input type="radio" /></td>
+<td>When completed, the file /etc/hosts on hosts in the dev host group should have a line for each managed host:</td>
+</tr>
+<tr>
+<td><input type="radio" /></td>
+<td> 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 <br>
+		::1         localhost localhost.localdomain localhost6 localhost6.localdomain6<br>
+
+		172.25.250.10 servera.lab.example.com servera<br>
+		172.25.250.11 serverb.lab.example.com serverb<br>
+		172.25.250.12 serverc.lab.example.com serverc<br>
+		172.25.250.13 serverd.lab.example.com serverd<br>
+		172.25.250.9  workstation.lab.example.com workstation<br>
+</td>
+</tr>
+
+</table>
+</body>
+
+

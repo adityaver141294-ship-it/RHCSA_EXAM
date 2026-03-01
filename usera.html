@@ -1,0 +1,41 @@
+<body bgcolor="#e1e1e1">
+<table border="2" width="80%" align="center">
+
+<tr>
+<td><input type="radio" /></td>
+<td>Create user accounts <br>
+A list of users to be created can be found in the file called user_list.yml which
+you should download from <a href="http://content.example.com/EXAM/user_list.yml" target="_blank">http://content.example.com/EXAM/user_list.yml </a> and save to
+/home/admin/ansible/
+</td>
+<tr>
+
+<tr>
+<td><input type="radio" /></td>
+<td>Using the password vault  created elsewhere in this exam, 	create a playbook called create_user.yml that creates user accounts as follows:
+</td>
+<tr>
+<td><input type="radio" /></td>
+<td>Users with a job description of developer should be: <br>
+created on managed nodes in the dev and test host groups assigned the password from the dev_pass variable a member of supplementary group devops
+</td>
+</tr>
+<tr>
+<td><input type="radio" /></td>
+<td> Users with a job description of manager should be: <br>
+
+ created on managed nodes in the prod host group assigned the password from the mgr_pass variable a member of supplementary group opsmgr 
+ 				
+</td>
+</tr>
+
+<tr>
+<td><input type="radio" /></td>
+<td> Passwords should use the SHA512 hash format. <br>
+Your playbook should work using the vault password file created  elsewhere in this exam.
+</td>
+</tr>
+</table>
+</body>
+
+
